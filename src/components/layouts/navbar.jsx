@@ -1,15 +1,6 @@
-import { CircleUser, Menu, Package2, Search } from "lucide-react"
+import { CircleUser, Menu, Package2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +9,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Outlet } from "react-router-dom";
 
@@ -32,13 +22,31 @@ function SharedLayout() {
             className="flex items-center gap-2 text-lg font-semibold md:text-base"
           >
             <Package2 className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
+            <span className="sr-only">MotoSaaS</span>
           </a>
           <a
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Home
+          </a>
+          <a
+            href="#features"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Features
+          </a>
+          <a
+            href="#testimonials"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Testimonials
+          </a>
+          <a
+            href="#cta"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Get Started
           </a>
         </nav>
         <Sheet>
@@ -59,13 +67,31 @@ function SharedLayout() {
                 className="flex items-center gap-2 text-lg font-semibold"
               >
                 <Package2 className="h-6 w-6" />
-                <span className="sr-only">Acme Inc</span>
+                <span className="sr-only">MotoSaaS</span>
               </a>
               <a
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Home
+              </a>
+              <a
+                href="#features"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Features
+              </a>
+              <a
+                href="#testimonials"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#cta"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Get Started
               </a>
             </nav>
           </SheetContent>
